@@ -8,7 +8,8 @@ body {
     font : 100%/1.4 'lucida sans unicode', 'lucida grande', 'Trebuchet MS', verdana, arial, helvetica, helve, sans-serif;
     color : #000;
     text-align: center;
-    background: #fff url(/images/bodyback.png) left top;
+    /*background: #fff url(/images/bodyback.png) left top;*/
+    background: #fff left top;
 }
 
 button,
@@ -86,7 +87,8 @@ h6 {
 
 #headcontainer {
     width: 100%;
-    background: url(/images/headerback.png) no-repeat center top;
+    /*background: url(/images/headerback.png) no-repeat center top;*/
+    background:  no-repeat center top;
 }
 
 header {
@@ -147,7 +149,8 @@ header {
 #footercontainer {
     width: 100%;
     border-top: 1px solid #000;
-    background: #222 url(/images/footerback.png) left top;
+    /*background: #222 url(/images/footerback.png) left top;*/
+    background: #222 left top;
 }
 
 footer {
