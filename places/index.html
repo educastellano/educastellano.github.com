@@ -4,24 +4,37 @@
 	<meta charset="UTF-8">
 	<title>Google Maps</title>
 
-	<!-- Importing Web Component's Polyfill -->
+	<!-- libs -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
 	<!-- Importing Custom Elements -->
-	<link rel="import" href="../components/google-maps/src/google-maps.html">
+    <link rel="import" href="../lib/google-maps/src/google-maps.html">
+
+    <!-- App-->
+    <script src="app.js"></script>
 
 	<style>
-	google-maps {
-		height: 600px;
-		width: 800px;
-	}
+        html {
+            height: 100%
+        }
+
+        body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px
+        }
+
+        google-maps {
+            height: 100%
+        }
 	</style>
 </head>
 <body>
 
-	<!-- Using Custom Elements -->
-	<google-maps zoom="4" type="hybrid" latitude="30" longitude="100"></google-maps>
+    <google-maps zoom="4" type="hybrid" latitude="30" longitude="100"></google-maps>
+	<!--<places-map zoom="4" type="hybrid" latitude="30" longitude="100"></places-map>-->
 
 </body>
 </html>
