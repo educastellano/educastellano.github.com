@@ -1,3 +1,0 @@
-[submodule "components/google-maps"]
-	path = components/google-maps
-	url = https://github.com/educastellano/google-maps-element.git
