@@ -1,158 +1,28 @@
-.c6 {
-    padding-left: 0;
-    line-height: 1.0;
-    padding-top: 0;
-    margin-right: 40pt;
-    text-align: justify;
-    direction: ltr;
-    margin-left: 36pt;
-    padding-bottom: 0;
-}
-
-.c8 {
-    line-height: 1.0;
-    padding-top: 0;
-    margin-right: 40pt;
-    text-indent: -30pt;
-    direction: ltr;
-    margin-left: 30pt;
-    padding-bottom: 0;
-}
-
-.c9 {
-    line-height: 1.0;
-    padding-top: 0;
-    margin-right: 40pt;
-    text-align: justify;
-    direction: ltr;
-    margin-left: 18pt;
-    padding-bottom: 10pt;
-}
-
-.c3 {
-    line-height: 1.0;
-    padding-top: 0;
-    margin-right: 40pt;
-    text-align: justify;
-    direction: ltr;
-    margin-left: 18pt;
-    padding-bottom: 0;
-}
-
-.c13 {
-    line-height: 1.0;
-    padding-top: 0;
-    margin-right: 40pt;
-    direction: ltr;
-    margin-left: 18pt;
-    padding-bottom: 10pt;
-}
-
-.c14 {
-    line-height: 1.0;
-    padding-top: 0;
-    direction: ltr;
-    padding-bottom: 0;
-}
-
-.c0 {
-    color: #666;
-    font-size: 8pt;
-    font-weight: 700;
-}
-
-.c17 {
-    color: #cc7a17;
-    font-size: 12pt;
-}
-
-.c4 {
-    color: #666;
-    font-size: 8pt;
-}
-
-.c7 {
-    margin: 0;
-    padding: 0;
-}
-
-.c1 {
-    color: #444;
-    font-size: 8pt;
-}
-
-.c5 {
-    color: #cc7a17;
-    font-size: 9pt;
-}
-
-.c2 {
-    font-size: 11pt;
-    font-family: Arial;
-}
-
-.c15 {
-    color: #333;
-    font-size: 8pt;
-}
-
-.c23 {
-    text-indent: -18pt;
-    margin-left: 36pt;
-}
-
-.c18 {
-    margin-right: 36pt;
-}
-
-.c10 {
-    height: 10pt;
-}
-
-.c11 {
-    color: #9a521b;
-}
-
-.c19 {
-    margin-left: 18pt;
-}
-
-.c12 {
-    text-align: justify;
-}
-
-.c21 {
-    margin-right: 40pt;
-}
-
-li {
-    color: #000;
-    font-size: 10pt;
-    background-color: #fff;
-    font-family: Verdana;
-}
-
-p {
-    color: #000;
-    font-size: 10pt;
-    background-color: #fff;
-    margin: 0;
-    font-family: Verdana;
+body {
+	font-family: Verdana;
+	font-size: 8pt;
+	text-align: justify;
 }
 
 h1 {
-    padding-top: 12pt;
-    line-height: 1.15;
-    text-align: left;
-    color: #000;
-    font-size: 18pt;
-    background-color: #fff;
-    font-family: Verdana;
-    font-weight: 700;
-    padding-bottom: 12pt;
-    margin-bottom: 5px;
+    color: #9a521b;
+	font-size: 18pt;
+	font-weight: 700;
+	margin-bottom: -10px;
 }
 
-.c99 {
-    margin-left: 20px;
+.info {
+	color: #cc7a17;
+	font-size: 9pt;
 }
+
+.section {
+	color: #cc7a17;
+	font-size: 12pt;
+}
+
+.subsection {
+	font-weight: bold;
+	color: #666;
+}
+
