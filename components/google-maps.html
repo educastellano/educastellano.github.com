@@ -69,6 +69,10 @@
 			zoomChanged: function() {
 				var zoom = this.getAttribute('zoom');
 				this.map.setZoom(+zoom);
+			},
+
+			foo: function () {
+				console.log('foo!');
 			}
 		});
 	</script>

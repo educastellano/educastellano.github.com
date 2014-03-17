@@ -3,11 +3,12 @@
     'use strict';
 
     var App = root.App = {
-        model: {},
         list: {},
         view: {}
     };
 
+    // TODO use the map component, instead of views.
+    //
     App.view.Map = {
         map: false,
 
@@ -55,20 +56,9 @@
         }
     };
 
-    // main
-    //
-    window.addEventListener('WebComponentsReady', function () {
-        $.ajax({
-            url: 'data/places.json',
-            success: function (resp) {
-                App.view.Map.map = document.querySelector('google-maps').map;
-                App.list.Places = resp.places;
-                App.view.Map.renderPlaces(resp.places);
-            },
-            error: function () {
-                console.log('could not load places');
-            }
-        });
-    });
+    App.main = function (data) {
+        App.view.Map.map = document.querySelector('google-maps').map;
+        App.view.Map.renderPlaces(App.list.Places); 
+    };
 
 })(this);
