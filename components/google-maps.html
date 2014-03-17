@@ -1,4 +1,5 @@
-<polymer-element name="google-maps" attributes="latitude longitude tilt type zoom">
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<polymer-element name="google-maps" attributes="latitude longitude tilt type zoom resources_url">
 
 	<template>
 		<style>
@@ -23,7 +24,7 @@
 			type: google.maps.MapTypeId.ROADMAP,
 			zoom: 8,
 
-			created: function() {
+			ready: function() {
 				this.map = new google.maps.Map(this.$.map, {
 					center: new google.maps.LatLng(this.latitude, this.longitude),
 					mapTypeId: this.type,
@@ -71,9 +72,55 @@
 				this.map.setZoom(+zoom);
 			},
 
-			foo: function () {
-				console.log('foo!');
-			}
+	        renderPlaces: function (places) {
+	            var i;
+
+	            for (i=0; i<places.length; i++) {
+	                this.createMarker(places[i]);
+	            }
+	        },
+
+	        createMarker: function (place) {
+	            var me = this,
+	                marker_data,
+	                marker;
+
+	            marker_data = {
+	                position: new google.maps.LatLng(place.lat, place.lon),
+	                map: this.map,
+	                title: place.name,
+	                model: place
+	            };
+
+	            if (place.icon) {
+	                marker_data.icon = {
+	                    url: this.resources_url + place.icon,
+	                    scaledSize: {
+	                        height: 30,
+	                        width: 30
+	                    }                    
+	                }
+	            }
+
+	            marker = new google.maps.Marker(marker_data);
+
+	            google.maps.event.addListener(marker, 'click', function (e) {
+	                var infowindow,
+	                    content;
+	                content =
+	                        '<h3>'+ place.name +'</h3>' +
+	                        ''+ place.description +'' +
+	                        '<br><br>'+
+	                        '<a href="'+ place.link +'" target="_blank">more info</a>';
+	                infowindow = new google.maps.InfoWindow({
+	                    content: content
+	                });
+	                infowindow.open(me.map, marker);
+	            });
+
+	            return marker;
+	        }
+
 		});
 	</script>
 

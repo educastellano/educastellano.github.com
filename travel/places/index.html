@@ -5,16 +5,14 @@
 	<title>Google Maps</title>
 
 	<!-- libs -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script>
+	<!-- // <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.0.20130816/polymer.min.js"></script> -->
     <!-- // <script src="/lib/bower_components/platform/platform.js"></script> -->
+    <script src="/bower_components/platform/platform.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
 	<!-- Importing Custom Elements -->
-    <link rel="import" href="../../components/google-maps.html">
-
-    <!-- App-->
-    <script src="app.js"></script>
+    <link rel="import" href="/components/google-maps.html">
 
 	<style>
         html {
@@ -34,9 +32,11 @@
 </head>
 <body>
 
-    <google-maps zoom="4" type="hybrid" latitude="30" longitude="100"></google-maps>
+    <google-maps id="map" zoom="4" type="hybrid" latitude="30" longitude="100"></google-maps>
 	<!--<places-map zoom="4" type="hybrid" latitude="30" longitude="100"></places-map>-->
 
+    <!-- App-->
+    <script src="app.js"></script>
     <script>
         function callback(data) {
             App.list.Places = data.places;
