@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .field {
+            font-weight: bold;
+            padding-right: 5px;
+        }
+        td {
+            /*border: 1px solid;*/
+        }
+        .empty {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+
+<table>
+    <thead>
+    <th></th>
+    <th>Visa</th>
+    <th>Government</th>
+    <th><a href="languages.html">Languages</a></th>
+    <th>Currency</th>
+    <th>Conversion (1 EUR)</th>
+    <th>Timezone</th>
+    <th>Weather</th>
+    <th>Best season</th>
+    <th>Living costs</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/China" target="_blank">China</a></td>
+        <td></td>
+        <td></td>
+        <td>Mandarin (70% and lingua franca) <br> <small><small><small><small> (includes Shanghainese), Yue (includes Cantonese and Taishanese), Min (includes Hokkien and Teochew), Xiang, Gan, Hakka <br> Zhuang, Mongolian, Tibetan, Uyghur, Hmong, Korean</td>
+        <td>Renminbi (yuan) (¥) (CNY)</td>
+        <td id="curr_cny"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>China - </td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td></td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>China - </td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td></td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+        <tr>
+        <td>China - </td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td></td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Mongolia" target="_blank">Mongolia</a></td>
+        <td></td>
+        <td></td>
+        <td>Mongolian (95%), </td>
+        <td>Tögrög (MNT)</td>
+        <td id="curr_mnt"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Russia" target="_blank">Russia</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Kazakhstan" target="_blank">Kazakhstan</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Nepal" target="_blank">Nepal</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/India" target="_blank">India</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Sri Lanka" target="_blank">Sri Lanka</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Bangladesh" target="_blank">Bangladesh</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Myanmar" target="_blank">Myanmar</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Thailand" target="_blank">Thailand</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Laos" target="_blank">Laos</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Cambodia" target="_blank">Cambodia</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Vietnam" target="_blank">Vietnam</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Malaysia" target="_blank">Malaysia</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Singapore" target="_blank">Singapore</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Indonesia" target="_blank">Indonesia</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="http://en.wikipedia.org/wiki/Philippines" target="_blank">Philippines</a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
